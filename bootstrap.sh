@@ -7,12 +7,12 @@ apt-get install -y g++ curl libssl-dev apache2-utils unzip make
 
 wget http://nodejs.org/dist/v0.10.26/node-v0.10.26.tar.gz
 
-tar -xf node-v0.2.6.tar.gz
+tar -xf node-v0.10.26.tar.gz
 
-cd node-v0.10.26/
+cd node-v0.10.26.tar.gz/
 
 ./configure
 make
-sudo make install
+make install
 
 npm install -g learnyounode
