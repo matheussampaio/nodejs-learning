@@ -13,6 +13,9 @@ function printResults() {
 function httpGet(index) {
 	http.get(process.argv[2 + index], function (response) {
 		response.setEncoding('utf-8');
+
+		results[index] = "";
+
 		response.on('data', function (data) {
 			results[index] = results[index] + data;
 		});
