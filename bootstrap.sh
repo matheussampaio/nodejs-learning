@@ -16,3 +16,4 @@ make
 make install
 
 npm install -g learnyounode
+npm install -g stream-adventurecd
